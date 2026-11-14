@@ -1,0 +1,16 @@
+# Rust build artifacts
+/target/
+**/*.rs.bk
+*.pdb
+
+# Compiled binaries
+*.exe
+
+# Local runtime config (tracked template is config.example.json)
+/config.json
+
+# IDE / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

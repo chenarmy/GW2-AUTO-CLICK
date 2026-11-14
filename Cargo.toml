@@ -1,0 +1,14 @@
+[package]
+name = "gw2-auto-click"
+version = "0.1.0"
+edition = "2021"
+description = "Guild Wars 2 (激战2) background/foreground auto key presser written in pure Rust with zero external crates"
+license = "MIT"
+
+[dependencies]
+
+[profile.release]
+opt-level = "s"
+lto = true
+strip = true
+codegen-units = 1

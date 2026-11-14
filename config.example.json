@@ -1,0 +1,21 @@
+{
+  "window_titles": ["激战2", "Guild Wars 2"],
+  "match_mode": "exact",
+  "skills": [
+    { "key": "Q", "cooldown_ms": 22000 },
+    { "key": "4", "cooldown_ms": 13000 },
+    { "key": "3", "cooldown_ms": 8000 },
+    { "key": "2", "cooldown_ms": 5000 },
+    { "key": "1", "cooldown_ms": 0 }
+  ],
+  "keys": [],
+  "interval_ms": 400,
+  "cd_buffer_ms": 200,
+  "jitter_ms": 0,
+  "key_hold_ms": 50,
+  "mode": "background",
+  "toggle_hotkey": "F9",
+  "exit_hotkey": "F10",
+  "auto_start": true,
+  "auto_elevate": true
+}
