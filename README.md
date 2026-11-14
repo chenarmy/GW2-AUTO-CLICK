@@ -2,6 +2,22 @@
 
 一个用 **纯 Rust**（零第三方 Crate 依赖）编写的《激战2》（Guild Wars 2）后台/前台自动技能循环小工具，重构替代早期的按键精灵脚本。
 
+```
+Hwnd2 = Plugin.Window.Find("0", "激战2")
+If Hwnd2 = 0 Then 
+	TracePrint "句柄没有找到"
+End If
+
+While True
+pressOne
+Wend
+
+Function pressOne()
+Call Plugin.Bkgnd.KeyPress(Hwnd2, 49)
+Delay 1000
+End Function
+
+```
 ## 特性
 
 - **零外部依赖**：仅依赖 Rust 标准库与 Windows 原生 `user32.dll` / `kernel32.dll` / `shell32.dll` API，编译速度快，生成的 `.exe` 单文件无任何运行库依赖。
